@@ -1,0 +1,10 @@
+services:
+  lightpanda-mcp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: lightpanda-mcp
+    ports:
+      - 8000:8000
+    environment:
+      - API_KEY=your_api_key_here
